@@ -1,24 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VFf-mN-plT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Обо мне-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tabbar_HT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6730.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="AwK-1L-Idf">
+                                <rect key="frame" x="16" y="35" width="343" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="9QX-NB-3eR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меня зовут Антон. Мне 33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHn-Zy-chz">
+                                <rect key="frame" x="82" y="336" width="211.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AwK-1L-Idf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="4xJ-5V-daz"/>
+                            <constraint firstItem="oHn-Zy-chz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JlI-KO-eEN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AwK-1L-Idf" secondAttribute="trailing" constant="16" id="Kfl-e6-dqK"/>
+                            <constraint firstItem="AwK-1L-Idf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YJH-fO-cHd"/>
+                            <constraint firstItem="oHn-Zy-chz" firstAttribute="top" secondItem="AwK-1L-Idf" secondAttribute="bottom" constant="48" id="wKI-Rh-OSS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Обо мне" id="XaT-Hl-bZA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="860" y="133.5832083958021"/>
+        </scene>
+        <!--Откуда я-->
+        <scene sceneID="7KH-9m-nkZ">
+            <objects>
+                <viewController id="pmu-ui-iQe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aGe-dc-tgM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2806.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uCx-Kl-ru7">
+                                <rect key="frame" x="16" y="49" width="343" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="261" id="3Rv-L7-azD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Я из Севастополя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNy-7q-xNX">
+                                <rect key="frame" x="116" y="368" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CNy-7q-xNX" firstAttribute="top" secondItem="uCx-Kl-ru7" secondAttribute="bottom" constant="57" id="KVz-tu-vc7"/>
+                            <constraint firstItem="uCx-Kl-ru7" firstAttribute="top" secondItem="5in-V0-Bmv" secondAttribute="top" constant="29" id="OHd-pa-Bjf"/>
+                            <constraint firstItem="5in-V0-Bmv" firstAttribute="trailing" secondItem="uCx-Kl-ru7" secondAttribute="trailing" constant="16" id="hUx-wR-KLK"/>
+                            <constraint firstItem="CNy-7q-xNX" firstAttribute="centerX" secondItem="5in-V0-Bmv" secondAttribute="centerX" id="rOp-ZR-AD1"/>
+                            <constraint firstItem="uCx-Kl-ru7" firstAttribute="leading" secondItem="5in-V0-Bmv" secondAttribute="leading" constant="16" id="sgb-ap-VFA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5in-V0-Bmv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Откуда я" id="3ZK-VZ-sdx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8T-v8-JhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="943"/>
+        </scene>
+        <!--Увлечения-->
+        <scene sceneID="WtE-tj-b0A">
+            <objects>
+                <viewController id="jyk-3S-aCZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j2s-MA-agg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои увлечения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-dU-rKD">
+                                <rect key="frame" x="45" y="81" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фитнес" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-vo-pns">
+                                <rect key="frame" x="45" y="142" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иностранные языки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wd-C4-2qb">
+                                <rect key="frame" x="45" y="182" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Математика и программирование" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bX-r5-07s">
+                                <rect key="frame" x="45" y="226" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74600399979999998" green="0.97680455450000003" blue="0.68793579370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9wd-C4-2qb" firstAttribute="top" secondItem="fXU-vo-pns" secondAttribute="bottom" constant="19" id="1XE-E4-aUj"/>
+                            <constraint firstItem="9wd-C4-2qb" firstAttribute="leading" secondItem="sJH-PJ-aaW" secondAttribute="leading" constant="45" id="PfX-XR-rve"/>
+                            <constraint firstItem="fXU-vo-pns" firstAttribute="leading" secondItem="sJH-PJ-aaW" secondAttribute="leading" constant="45" id="o6s-Oe-pDe"/>
+                            <constraint firstItem="6y8-dU-rKD" firstAttribute="top" secondItem="sJH-PJ-aaW" secondAttribute="top" constant="61" id="p2h-IV-9g4"/>
+                            <constraint firstItem="fXU-vo-pns" firstAttribute="top" secondItem="6y8-dU-rKD" secondAttribute="bottom" constant="31" id="qoX-1Z-bED"/>
+                            <constraint firstItem="6y8-dU-rKD" firstAttribute="leading" secondItem="sJH-PJ-aaW" secondAttribute="leading" constant="45" id="vFH-Mh-3k5"/>
+                            <constraint firstItem="5bX-r5-07s" firstAttribute="leading" secondItem="sJH-PJ-aaW" secondAttribute="leading" constant="45" id="vKM-P6-vFb"/>
+                            <constraint firstItem="5bX-r5-07s" firstAttribute="top" secondItem="9wd-C4-2qb" secondAttribute="bottom" constant="23" id="x7H-p0-mEZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sJH-PJ-aaW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Увлечения" id="o8g-8c-2Uz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUI-GJ-KrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="887"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qO1-cO-OPs">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VFf-mN-plT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAk-ib-7dt">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6uY-id-PMs"/>
+                        <segue destination="pmu-ui-iQe" kind="relationship" relationship="viewControllers" id="yYc-fk-wH6"/>
+                        <segue destination="jyk-3S-aCZ" kind="relationship" relationship="viewControllers" id="BYm-AN-n3v"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTx-K1-8aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_2806.jpg" width="750" height="737"/>
+        <image name="IMG_6730.JPG" width="960" height="1199"/>
+    </resources>
 </document>
